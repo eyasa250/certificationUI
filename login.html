@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Certification Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <div class="flex h-screen">
+    <!-- Left section -->
+    <div class="hidden lg:flex flex-col items-center justify-center bg-black text-white w-1/2 relative">
+      <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('https://via.placeholder.com/800');"></div>
+      <div class="z-10 text-center">
+        <h1 class="text-4xl font-bold">Welcome Back</h1>
+        <p class="mt-4">Log in to your account and continue your journey.</p>
+      </div>
+    </div>
+
+    <!-- Right section -->
+    <div class="flex flex-col justify-center items-center w-full lg:w-1/2 px-8">
+      <h2 class="text-2xl font-semibold">Login to Your Account</h2>
+      <p class="mt-2 text-gray-600">Access your certifications and progress.</p>
+      <form action="#" method="POST" class="w-full max-w-md mt-6 space-y-4">
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="password" name="password" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <div class="flex justify-between items-center">
+          <label class="flex items-center text-gray-600 text-sm">
+            <input type="checkbox" name="remember" class="mr-2">
+            Remember me
+          </label>
+          <a href="#" class="text-blue-500 text-sm">Forgot password?</a>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

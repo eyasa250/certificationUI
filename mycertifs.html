@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Certification Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Conteneur pour la barre de navigation -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-gray-800">Welcome back, [User]!</h2>
+    <p class="mt-2 text-gray-600">Here’s your certification progress:</p>
+
+    <!-- Progress Overview -->
+    <div class="bg-white shadow-md rounded-lg p-6 mt-4">
+      <h3 class="text-xl font-semibold text-gray-800">Overall Progress</h3>
+      <p class="mt-2 text-gray-600">60% of your certifications are completed!</p>
+      <div class="w-full bg-gray-200 rounded-full h-4 mt-4">
+        <div class="bg-blue-500 h-4 rounded-full" style="width: 60%;"></div>
+      </div>
+    </div>
+
+    <!-- Certifications Progress Section -->
+    <section class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Example Certification Card -->
+      <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500">
+        <h3 class="text-xl font-semibold text-gray-800">Certification A</h3>
+        <p class="mt-2 text-gray-600">Progress: 75%</p>
+        <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
+          <div class="bg-blue-500 h-4 rounded-full" style="width: 75%;"></div>
+        </div>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Resume</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script pour charger la navigation -->
+  <script src="navbar.js"></script>
+</body>
+</html>
